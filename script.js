@@ -1,30 +1,32 @@
 'use strict';
+
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.getElementById('navigation');
-menuButton?.addEventListener('click', () => {
-  const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
-  menuButton.setAttribute('aria-expanded', String(!isOpen));
-  menuButton.setAttribute('aria-label', isOpen ? 'Открыть меню' : 'Закрыть меню');
-  navigation.classList.toggle('is-open', !isOpen);
-});
-navigation?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+
+function closeMenu() {
+  if (!navigation || !menuButton) return;
   navigation.classList.remove('is-open');
-  menuButton?.setAttribute('aria-expanded', 'false');
-  menuButton?.setAttribute('aria-label', 'Открыть меню');
-}));
-const dialog = document.querySelector('.image-dialog');
-const dialogImage = dialog?.querySelector('img');
-const caption = dialog?.querySelector('.dialog-caption');
-document.querySelectorAll('.image-zoom').forEach(button => button.addEventListener('click', () => {
-  dialogImage.src = button.dataset.image;
-  dialogImage.alt = button.dataset.alt || 'Фотография разработанного изделия';
-  caption.textContent = dialogImage.alt;
-  if (typeof dialog.showModal === 'function') dialog.showModal();
-  else window.open(dialogImage.src, '_blank', 'noopener');
-}));
-dialog?.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
-dialog?.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
-document.querySelectorAll('.partner img, .hero-grant-brand img').forEach(img => {
-  img.addEventListener('error', () => img.classList.add('is-broken'));
-  if (img.complete && img.naturalWidth === 0) img.classList.add('is-broken');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.setAttribute('aria-label', 'Открыть меню');
+}
+
+menuButton?.addEventListener('click', () => {
+  const nextOpen = menuButton.getAttribute('aria-expanded') !== 'true';
+  navigation?.classList.toggle('is-open', nextOpen);
+  menuButton.setAttribute('aria-expanded', String(nextOpen));
+  menuButton.setAttribute('aria-label', nextOpen ? 'Закрыть меню' : 'Открыть меню');
+});
+
+navigation?.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMenu);
+});
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') closeMenu();
+});
+
+document.querySelectorAll('.hero-grant-brand img').forEach(img => {
+  const showFallback = () => img.classList.add('is-broken');
+  img.addEventListener('error', showFallback);
+  if (img.complete && img.naturalWidth === 0) showFallback();
 });
