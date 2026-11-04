@@ -24,7 +24,7 @@ document.querySelectorAll('.image-zoom').forEach(button => button.addEventListen
 }));
 dialog?.querySelector('.dialog-close')?.addEventListener('click', () => dialog.close());
 dialog?.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
-document.querySelectorAll('.partner img').forEach(img => {
+document.querySelectorAll('.partner img, .hero-grant-brand img').forEach(img => {
   img.addEventListener('error', () => img.classList.add('is-broken'));
   if (img.complete && img.naturalWidth === 0) img.classList.add('is-broken');
 });
