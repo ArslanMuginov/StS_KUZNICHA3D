@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf8f3">
-  <meta name="description" content="Кузница 3D-Игрушек — проект по созданию образовательных игрушек с помощью 3D-моделирования и аддитивного производства. Сортировщик, пазл-карта Татарстана и учебный редуктор-конструктор.">
+  <meta name="theme-color" content="#fbf9f4">
+  <meta name="description" content="Развивающие 3D-печатные игрушки с возможностью индивидуального оформления. Геометрические сортировщики, пазл-карты и учебные конструкторы. Оставьте заявку на изготовление.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Кузница 3D-Игрушек — идеи, которые можно потрогать">
-  <meta property="og:description" content="Образовательные игрушки: от цифровой модели до готового изделия.">
+  <meta property="og:title" content="Кузница 3D-Игрушек — развивающие игрушки на заказ">
+  <meta property="og:description" content="Игровые наборы для знакомства с геометрией, географией и механикой. Выберите разработку или предложите свою идею.">
   <meta property="og:image" content="assets/images/sorter.webp">
-  <title>Кузница 3D-Игрушек — образовательные игрушки и 3D-печать</title>
+  <title>Развивающие игрушки на заказ — Кузница 3D-Игрушек</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
   <script defer src="https://forms.yandex.ru/_static/embed.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Перейти к содержанию</a>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Кузница 3D-Игрушек — на главную">
@@ -26,91 +26,156 @@
         <span class="brand-copy"><strong>КУЗНИЦА</strong><small>3D-ИГРУШЕК</small></span>
       </a>
       <nav class="nav" id="navigation" aria-label="Основное меню">
-        <a href="#about">О проекте</a>
-        <a href="#products">Наши игрушки</a>
-        <a href="#process">Как создаём</a>
-        <a href="#request">Оставить заявку</a>
-        <a href="#support">Поддержка</a>
+        <a href="#catalog">Игрушки</a>
+        <a href="#custom">Индивидуальный заказ</a>
+        <a href="#steps">Как заказать</a>
+        <a href="#faq">Вопросы</a>
       </nav>
-      <a class="button button-dark header-action" href="#request">Оставить заявку <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+      <a class="button button-dark header-action" href="#order">Оставить заявку <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-controls="navigation" aria-expanded="false" aria-label="Открыть меню"><span></span><span></span><span></span></button>
     </div>
   </header>
 
-  <main id="content">
+  <main id="main">
     <section class="hero" aria-labelledby="hero-title">
       <div class="container">
-        <aside class="hero-grant" aria-label="Государственная поддержка проекта">
-          <a class="hero-grant-brand hero-grant-fund" href="https://fasie.ru/" target="_blank" rel="noopener noreferrer" aria-label="Фонд содействия инновациям — официальный сайт">
-            <img src="https://dtp.spbstu.ru/userfiles/files/partners/fs.jpg" alt="Логотип Фонда содействия инновациям" width="155" height="84" loading="eager">
-            <span class="hero-grant-fallback">Фонд содействия инновациям</span>
+        <div class="hero-grant" id="support" aria-label="Информация о государственной поддержке проекта">
+          <a class="hero-grant-brand hero-grant-fund" href="https://fasie.ru/" target="_blank" rel="noopener noreferrer">
+            <img src="https://dtp.spbstu.ru/userfiles/files/partners/fs.jpg" alt="Логотип Фонда содействия инновациям" loading="eager" width="155" height="84">
+            <span class="logo-fallback">Фонд содействия инновациям</span>
           </a>
           <div class="hero-grant-message">
-            <span class="hero-grant-kicker"><span class="hero-grant-kicker-dot" aria-hidden="true"></span> ГОСУДАРСТВЕННАЯ ПОДДЕРЖКА ПРОЕКТА</span>
+            <span class="hero-grant-kicker"><span class="kicker-dot" aria-hidden="true"></span> ПРОЕКТ ПРИ ПОДДЕРЖКЕ ФОНДА</span>
             <p>Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий стартап» мероприятия «Платформа университетского технологического предпринимательства» федерального проекта «Технологии»</p>
           </div>
-          <a class="hero-grant-brand hero-grant-platform" href="https://univertechpred.ru/" target="_blank" rel="noopener noreferrer" aria-label="Платформа университетского технологического предпринимательства — официальный сайт">
-            <img src="https://univertechpred.ru/local/templates/mo/assets/img/master/main_project-logo.svg" alt="Логотип Платформы университетского технологического предпринимательства" width="175" height="90" loading="eager">
-            <span class="hero-grant-fallback">Платформа университетского технологического предпринимательства</span>
+          <a class="hero-grant-brand hero-grant-platform" href="https://univertechpred.ru/" target="_blank" rel="noopener noreferrer">
+            <img src="https://univertechpred.ru/local/templates/mo/assets/img/master/main_project-logo.svg" alt="Логотип Платформы университетского технологического предпринимательства" loading="eager" width="175" height="90">
+            <span class="logo-fallback">Платформа университетского технологического предпринимательства</span>
           </a>
-        </aside>
-      </div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="eyebrow-dot"></span> ОБРАЗОВАТЕЛЬНЫЕ ИГРУШКИ · 3D-ПЕЧАТЬ</div>
-          <h1 id="hero-title">Идеи, которые<br><span class="accent-underline">можно потрогать<span class="star" aria-hidden="true">✳</span></span></h1>
-          <p class="lead">Проектируем и изготавливаем развивающие игрушки: от первой линии в 3D-модели до яркой детали в руках.</p>
-          <div class="hero-buttons"><a class="button button-dark" href="#products">Познакомиться с игрушками <span aria-hidden="true">↗</span></a><a class="text-link" href="#request">Оставить заявку <span aria-hidden="true">→</span></a></div>
-          <div class="hero-facts"><div><strong>3</strong><span>разработанных вида<br>игрушек</span></div><div><strong>3D</strong><span>моделирование<br>и печать</span></div><div><strong>2026</strong><span>год реализации<br>проекта</span></div></div>
         </div>
-        <div class="hero-art" aria-label="Фотографии изготовленных образовательных игрушек">
-          <div class="color-shape color-shape-mint"></div><div class="color-shape color-shape-lilac"></div>
-          <div class="hero-photo hero-photo-main"><img src="assets/images/sorter.webp" alt="Изготовленный геометрический сортировщик: белая крышка с фигурными отверстиями" width="1212" height="681" fetchpriority="high"></div>
-          <div class="hero-photo hero-photo-map"><img src="assets/images/tatarstan-map.webp" alt="Пазл-карта Республики Татарстан из разноцветных 3D-печатных элементов" width="1212" height="681"></div>
-          <div class="hero-sticker"><span aria-hidden="true">✳</span> СДЕЛАНО<br>С ПОМОЩЬЮ<br>3D-ПЕЧАТИ</div>
-          <div class="hero-spark" aria-hidden="true">✴</div>
-        </div>
-      </div>
-      <div class="marquee" aria-label="Слоган проекта"><div class="marquee-track" aria-hidden="true"><span>ПРИДУМЫВАЕМ</span><b>✳</b><span>ПРОЕКТИРУЕМ</span><b>✳</b><span>ПЕЧАТАЕМ</span><b>✳</b><span>СОБИРАЕМ</span><b>✳</b><span>ИГРАЕМ</span><b>✳</b><span>ПРИДУМЫВАЕМ</span><b>✳</b><span>ПРОЕКТИРУЕМ</span><b>✳</b><span>ПЕЧАТАЕМ</span><b>✳</b></div></div>
-    </section>
-
-    <section class="section about-section" id="about" aria-labelledby="about-title">
-      <div class="container about-grid"><div class="section-heading"><span class="section-kicker">01 / О НАС</span><h2 id="about-title">Когда игра<br>встречается<br><em>с инженерией.</em></h2></div><div class="about-content"><p class="large-copy">«Кузница 3D-Игрушек» — стартап-проект по созданию экосистемы для проектирования, персонализации и аддитивного производства настраиваемых образовательных игрушек.</p><p>Мы соединяем цифровое моделирование и послойное изготовление деталей, чтобы создавать игровые наборы с понятной механикой, интересной геометрией и возможностью адаптации конструкции.</p><div class="about-tags"><span>3D-моделирование</span><span>Аддитивные технологии</span><span>Образовательные наборы</span><span>Персонализация</span></div></div></div>
-    </section>
-
-    <section class="section products-section" id="products" aria-labelledby="products-title"><div class="container"><div class="section-title-row"><div><span class="section-kicker">02 / НАШИ РАЗРАБОТКИ</span><h2 id="products-title">Не просто игрушки.<br><em>Маленькие открытия.</em></h2></div><p>Три изделия, разработанные и изготовленные в рамках пробной партии проекта.</p></div>
-      <div class="products-grid">
-        <article class="product-card product-peach"><div class="product-image-wrap"><span class="product-number">01 / 03</span><img src="assets/images/sorter.webp" loading="lazy" alt="Геометрический сортировщик с шестью разноцветными фигурами и отверстиями" width="1212" height="681"><button class="image-zoom" type="button" data-image="assets/images/sorter-detail.webp" data-alt="Сортировщик со снятой крышкой и разноцветными фигурами" aria-label="Увеличить фотографию сортировщика">↗</button></div><div class="product-content"><p class="product-label">ФОРМА И ЛОГИКА</p><h3>Геометрический<br>сортировщик</h3><p>Набор с шестью объёмными фигурами и соответствующими отверстиями. Помогает исследовать формы и сопоставлять элементы.</p><span class="product-pill">6 геометрических фигур</span></div></article>
-        <article class="product-card product-lilac"><div class="product-image-wrap"><span class="product-number">02 / 03</span><img src="assets/images/tatarstan-map.webp" loading="lazy" alt="Разноцветная пазл-карта Республики Татарстан, изготовленная методом 3D-печати" width="1212" height="681"><button class="image-zoom" type="button" data-image="assets/images/tatarstan-set.webp" data-alt="Пазл-карта Татарстана с картой-схемой и расшифровкой обозначений" aria-label="Увеличить фотографию комплекта пазл-карты">↗</button></div><div class="product-content"><p class="product-label">ГЕОГРАФИЯ ЧЕРЕЗ ИГРУ</p><h3>Пазл-карта<br>Татарстана</h3><p>Разборная карта с элементами районов и Казани. В комплект входят схема сборки и расшифровка обозначений.</p><span class="product-pill">Сборка территорий</span></div></article>
-        <article class="product-card product-yellow"><div class="product-image-wrap"><span class="product-number">03 / 03</span><img src="assets/images/gear-kit.webp" loading="lazy" alt="Учебный редуктор-конструктор с красными, жёлтыми и зелёными зубчатыми колёсами" width="693" height="390"><button class="image-zoom" type="button" data-image="assets/images/gear-parts.webp" data-alt="Отдельные детали учебного редуктора-конструктора: шестерни, оси, основание и ручка" aria-label="Увеличить фотографию деталей редуктора">↗</button></div><div class="product-content"><p class="product-label">ПЕРВЫЕ ШАГИ В МЕХАНИКЕ</p><h3>Учебный редуктор-<br>конструктор</h3><p>Переставные оси, зубчатые колёса и съёмная ручка позволяют собирать разные схемы передачи вращения.</p><span class="product-pill">Сборные зубчатые передачи</span></div></article>
-      </div>
-      <div class="product-note"><span aria-hidden="true">✦</span> На фотографиях — реальные образцы, изготовленные в ходе реализации проекта, а не компьютерные изображения.</div>
-    </div></section>
-
-    <section class="section process-section" id="process" aria-labelledby="process-title"><div class="container"><div class="section-title-row"><div><span class="section-kicker">03 / КАК ЭТО РАБОТАЕТ</span><h2 id="process-title">От идеи<br><em>до готовой детали.</em></h2></div><p>Последовательность работы, применённая при создании пробной партии игрушек.</p></div><div class="process-grid"><div class="process-card"><span class="process-index">01</span><div class="process-icon">✎</div><h3>Моделируем</h3><p>Разрабатываем геометрию деталей и сборки в КОМПАС-3D.</p></div><div class="process-card"><span class="process-index">02</span><div class="process-icon">▧</div><h3>Готовим к печати</h3><p>Выбираем ориентацию, высоту слоя, заполнение и другие параметры в Bambu Studio.</p></div><div class="process-card"><span class="process-index">03</span><div class="process-icon">◫</div><h3>Печатаем</h3><p>Изготавливаем детали методом послойного наплавления термопластичного материала.</p></div><div class="process-card"><span class="process-index">04</span><div class="process-icon">✳</div><h3>Проверяем</h3><p>Собираем игрушки, проверяем посадки и при необходимости дорабатываем детали.</p></div></div><div class="process-visual"><div class="process-image"><img src="assets/images/gear-demo.webp" loading="lazy" alt="Ручная проверка работы зубчатых колёс учебного редуктора-конструктора" width="693" height="389"></div><div class="process-quote"><span class="quote-mark">“</span><p>От цифровой модели до реального механизма, который можно собрать своими руками.</p></div></div></div></section>
-
-    <section class="section request-section" id="request" aria-labelledby="request-title">
-      <div class="container request-container">
-        <div class="request-intro">
-          <span class="section-kicker">04 / ЗАЯВКА НА ИЗГОТОВЛЕНИЕ</span>
-          <h2 id="request-title">Есть идея для игрушки?<br><em>Расскажите нам.</em></h2>
-          <p>Заполните форму, чтобы отправить заявку на развивающий набор с индивидуальным дизайном.</p>
-        </div>
-        <div class="request-form-card">
-          <div class="request-form-top"><span class="request-form-marker" aria-hidden="true">✳</span><div><strong>Оставить заявку</strong><span>Форма проекта «Кузница 3D-Игрушек»</span></div></div>
-          <div class="request-form-embed">
-            <iframe src="https://forms.yandex.ru/u/699827cf493639b176236b26?iframe=1" name="ya-form-699827cf493639b176236b26" title="Заявка на изготовление развивающего набора — Яндекс Формы" width="650" height="780" frameborder="0" loading="lazy"></iframe>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> РАЗВИВАЮЩИЕ 3D-ИГРУШКИ НА ЗАКАЗ</span>
+            <h1 id="hero-title">Игрушки, с которыми <em>интересно учиться.</em></h1>
+            <p class="hero-lead">Создаём игровые наборы для знакомства с формами, географией и механикой. Выберите одну из наших разработок или расскажите, какую игрушку хотите вы.</p>
+            <div class="hero-buttons">
+              <a class="button button-dark button-large" href="#order">Заказать игрушку <span aria-hidden="true">↗</span></a>
+              <a class="button button-outline" href="#catalog">Посмотреть игрушки <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-proof">
+              <div class="proof-mark" aria-hidden="true">✳</div>
+              <p>Цвет, тематику и особенности набора можно обсудить при оформлении заявки.</p>
+            </div>
           </div>
-          <p class="request-form-note">Форма размещена в сервисе «Яндекс Формы». Если она не отображается, <a href="https://forms.yandex.ru/u/699827cf493639b176236b26" target="_blank" rel="noopener noreferrer">откройте её в новой вкладке ↗</a>.</p>
+          <div class="hero-art" aria-label="Фотографии изготовленных игрушек">
+            <div class="hero-art-bg"></div>
+            <figure class="hero-photo hero-photo-main"><img src="assets/images/sorter.webp" alt="Геометрический сортировщик, изготовленный методом 3D-печати" fetchpriority="high" width="1212" height="681"><figcaption>Формы и логика</figcaption></figure>
+            <figure class="hero-photo hero-photo-map"><img src="assets/images/tatarstan-map.webp" alt="Цветная пазл-карта Республики Татарстан" width="1212" height="681"><figcaption>География в игре</figcaption></figure>
+            <div class="hero-art-note"><span aria-hidden="true">✦</span> Реальные изделия, а не рендеры</div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section support-section" id="support" aria-labelledby="support-title"><div class="container support-container"><div class="support-head"><span class="section-kicker">05 / ПОДДЕРЖКА ПРОЕКТА</span><h2 id="support-title">Создаём благодаря<br><em>поддержке инноваций.</em></h2><p>Проект «Кузница 3D-Игрушек», № 107789, реализуется в рамках программы «Студенческий стартап».</p></div><div class="grant-card"><p class="grant-label">ИНФОРМАЦИЯ О ГОСУДАРСТВЕННОЙ ПОДДЕРЖКЕ</p><p class="grant-exact">Проект реализован при поддержке Фонда содействия инновациям в рамках программы «Студенческий стартап» мероприятия «Платформа университетского технологического предпринимательства» федерального проекта «Технологии»</p><div class="partners"><a class="partner partner-fund" href="https://fasie.ru/" target="_blank" rel="noopener noreferrer" aria-label="Фонд содействия инновациям, официальный сайт"><img src="https://dtp.spbstu.ru/userfiles/files/partners/fs.jpg" alt="Логотип Фонда содействия инновациям" loading="lazy"><span class="partner-alt">ФОНД СОДЕЙСТВИЯ ИННОВАЦИЯМ</span></a><a class="partner partner-platform" href="https://univertechpred.ru/" target="_blank" rel="noopener noreferrer" aria-label="Платформа университетского технологического предпринимательства, официальный сайт"><img src="https://univertechpred.ru/local/templates/mo/assets/img/master/main_project-logo.svg" alt="Официальный логотип Платформы университетского технологического предпринимательства" loading="lazy"><span class="partner-alt">ПЛАТФОРМА УНИВЕРСИТЕТСКОГО ТЕХНОЛОГИЧЕСКОГО ПРЕДПРИНИМАТЕЛЬСТВА</span></a></div><p class="partner-caption">Официальная символика участников программы представлена на главной странице проекта.</p></div></div></section>
+    <div class="benefit-line" aria-label="Преимущества наших разработок"><div class="container benefit-inner">
+      <span><b>01</b> Обучение через игру</span><span class="benefit-separator" aria-hidden="true">✳</span>
+      <span><b>02</b> Разработанные 3D-модели</span><span class="benefit-separator" aria-hidden="true">✳</span>
+      <span><b>03</b> Возможность персонализации</span>
+    </div></div>
 
-    <section class="section ending"><div class="container ending-inner"><div class="ending-symbol" aria-hidden="true">✳</div><div><span class="section-kicker">ИДЕИ ПРЕВРАЩАЮТСЯ В ПРЕДМЕТЫ</span><h2>Учиться можно<br><em>играя.</em></h2><p>«Кузница 3D-Игрушек» — проект на пересечении дизайна, инженерии и образовательных технологий.</p><a href="#top" class="button button-light">Вернуться наверх <span aria-hidden="true">↑</span></a></div></div></section>
+    <section class="section catalog-section" id="catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <div class="section-heading-row"><div><span class="section-kicker">НАШИ ИГРУШКИ</span><h2 id="catalog-title">С чего начнём <em>игру?</em></h2></div><p>Три разработанных набора. Все фотографии — реальные изделия, изготовленные в рамках проекта.</p></div>
+        <div class="catalog-grid">
+          <article class="toy-card toy-peach">
+            <div class="toy-image"><img src="assets/images/sorter.webp" alt="Геометрический сортировщик с отверстиями для шести разноцветных фигур" width="1212" height="681" loading="lazy"><span class="toy-chip">ФОРМЫ И ЛОГИКА</span></div>
+            <div class="toy-content"><h3>Геометрический сортировщик</h3><p>Игровой набор с шестью фигурами. Ребёнок сопоставляет форму детали с подходящим отверстием и собирает набор снова.</p><ul class="toy-features"><li>6 разных геометрических фигур</li><li>Съёмная крышка и удобное хранение</li></ul><a class="toy-action" href="#order">Оставить заявку на сортировщик <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="toy-card toy-lilac">
+            <div class="toy-image"><img src="assets/images/tatarstan-map.webp" alt="Разборная пазл-карта Республики Татарстан с цветными районами" width="1212" height="681" loading="lazy"><span class="toy-chip">ГЕОГРАФИЯ</span></div>
+            <div class="toy-content"><h3>Пазл-карта Татарстана</h3><p>Собирайте карту республики из отдельных деталей и знакомьтесь с расположением районов и города Казани.</p><ul class="toy-features"><li>Цветные съёмные элементы</li><li>Схема сборки и расшифровка</li></ul><a class="toy-action" href="#order">Оставить заявку на пазл-карту <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="toy-card toy-yellow">
+            <div class="toy-image"><img src="assets/images/gear-kit.webp" alt="Учебный редуктор-конструктор с набором цветных зубчатых колёс" width="693" height="390" loading="lazy"><span class="toy-chip">МЕХАНИКА</span></div>
+            <div class="toy-content"><h3>Учебный редуктор-конструктор</h3><p>Собирайте схемы зубчатых передач и наблюдайте, как вращение передаётся от одного колеса к другому.</p><ul class="toy-features"><li>Переставные оси и зубчатые колёса</li><li>Съёмная ручка для вращения</li></ul><a class="toy-action" href="#order">Оставить заявку на конструктор <span aria-hidden="true">↗</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section custom-section" id="custom" aria-labelledby="custom-title">
+      <div class="container custom-grid">
+        <div class="custom-copy">
+          <span class="section-kicker">ИНДИВИДУАЛЬНЫЙ ПОДХОД</span>
+          <h2 id="custom-title">Не нашли то, что нужно? <em>Есть место для вашей идеи.</em></h2>
+          <p>В заявке можно рассказать, какой игровой набор вы представляете. Обсудим, как адаптировать оформление или конструкцию под вашу задачу.</p>
+          <div class="custom-options">
+            <div><span aria-hidden="true">01</span><div><strong>Тематика</strong><small>Каким предметам или понятиям посвящена игрушка</small></div></div>
+            <div><span aria-hidden="true">02</span><div><strong>Цветовое оформление</strong><small>Предпочтительные цвета и визуальный стиль</small></div></div>
+            <div><span aria-hidden="true">03</span><div><strong>Состав и особенности</strong><small>Пожелания к элементам и уровню сложности</small></div></div>
+          </div>
+          <a class="button button-dark" href="#order">Обсудить свою идею <span aria-hidden="true">↗</span></a>
+          <p class="custom-clarification">Возможность конкретных изменений согласовывается индивидуально.</p>
+        </div>
+        <div class="custom-visual">
+          <div class="custom-photo"><img src="assets/images/tatarstan-set.webp" alt="Разобранный набор пазл-карты Татарстана и материалы для сборки" width="1212" height="681" loading="lazy"></div>
+          <div class="custom-floating"><span aria-hidden="true">✳</span><strong>От задумки<br>к реальной игрушке</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section steps-section" id="steps" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-heading-row"><div><span class="section-kicker">ПРОСТОЙ ПУТЬ К ЗАКАЗУ</span><h2 id="steps-title">Три шага от идеи <em>до обсуждения изготовления.</em></h2></div><p>Не нужно разбираться в 3D-печати — достаточно рассказать, какая игрушка вас интересует.</p></div>
+        <ol class="steps-grid">
+          <li class="step-card"><span class="step-n">01</span><div class="step-symbol" aria-hidden="true">✎</div><h3>Оставьте заявку</h3><p>Выберите интересующий вид набора или опишите собственную идею через форму.</p></li>
+          <li class="step-card"><span class="step-n">02</span><div class="step-symbol" aria-hidden="true">◎</div><h3>Обсудим детали</h3><p>Уточним пожелания к тематике, цвету, конструкции и другим особенностям.</p></li>
+          <li class="step-card"><span class="step-n">03</span><div class="step-symbol" aria-hidden="true">▧</div><h3>Согласуем изготовление</h3><p>Определим подходящий вариант набора и условия дальнейшей работы.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section order-section" id="order" aria-labelledby="order-title">
+      <div class="container">
+        <div class="order-shell">
+          <div class="order-side">
+            <span class="order-kicker">ВАША ИГРУШКА НАЧИНАЕТСЯ ЗДЕСЬ</span>
+            <h2 id="order-title">Расскажите,<br>что хотите <em>создать.</em></h2>
+            <p>Оставьте заявку на готовую разработку или предложите собственный вариант развивающей игрушки.</p>
+            <div class="order-divider"></div>
+            <div class="order-tips">
+              <span>В заявке можно рассказать:</span>
+              <ul><li>Какой игровой набор интересует</li><li>Какие цвета и тема нужны</li><li>Какие есть особые пожелания</li></ul>
+            </div>
+            <div class="order-note"><span aria-hidden="true">✳</span> Обсудим возможность реализации вашей идеи.</div>
+            <a class="order-external" href="https://forms.yandex.ru/u/699827cf493639b176236b26" target="_blank" rel="noopener noreferrer">Открыть анкету в отдельной вкладке <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="order-form-wrap">
+            <div class="order-form-head"><div><span class="order-form-label">ЗАЯВКА НА ИЗГОТОВЛЕНИЕ</span><strong>Оставить заявку</strong></div><span class="order-form-mark" aria-hidden="true">↗</span></div>
+            <iframe src="https://forms.yandex.ru/u/699827cf493639b176236b26?iframe=1&amp;theme=light" title="Форма заявки на изготовление игрушки" name="ya-form-699827cf493639b176236b26" width="100%" height="1050" frameborder="0" loading="lazy"></iframe>
+            <div class="order-form-footer">Форма работает через сервис Яндекс Формы. <a href="https://forms.yandex.ru/u/699827cf493639b176236b26" target="_blank" rel="noopener noreferrer">Не открывается? Заполнить отдельно ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div><span class="section-kicker">ЧАСТЫЕ ВОПРОСЫ</span><h2 id="faq-title">Перед тем как <em>заказать.</em></h2><p>Если нужного ответа нет, расскажите о своём запросе в форме.</p><a class="text-link" href="#order">Перейти к заявке <span aria-hidden="true">↗</span></a></div>
+        <div class="faq-items">
+          <details><summary>Можно предложить собственную идею игрушки?<span aria-hidden="true">+</span></summary><p>Да. Опишите задумку в заявке — обсудим возможность разработки и изготовления.</p></details>
+          <details><summary>Можно изменить цвета или тематику набора?<span aria-hidden="true">+</span></summary><p>Такие пожелания можно указать в заявке. Доступные изменения зависят от конструкции выбранной игрушки.</p></details>
+          <details><summary>Как узнать стоимость?<span aria-hidden="true">+</span></summary><p>На сайте нет фиксированного прайс-листа. Стоимость и условия изготовления необходимо согласовать для конкретного запроса.</p></details>
+          <details><summary>Что делать, если форма не загружается?<span aria-hidden="true">+</span></summary><p>Откройте <a href="https://forms.yandex.ru/u/699827cf493639b176236b26" target="_blank" rel="noopener noreferrer">Яндекс Форму в отдельной вкладке</a> и отправьте заявку там.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="small-support" aria-label="О проекте и его поддержке">
+      <div class="container support-bottom"><div><span class="support-bottom-kicker">О ПРОЕКТЕ</span><h2>«Кузница 3D-Игрушек»</h2><p>Проект № 107789 по созданию экосистемы для проектирования, персонализации и аддитивного производства образовательных игрушек. Реализуется при поддержке Фонда содействия инновациям.</p></div><a href="#support" class="support-bottom-link">Информация о поддержке на первом экране <span aria-hidden="true">↑</span></a></div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-row"><a class="footer-brand" href="#top">КУЗНИЦА <span>3D-ИГРУШЕК</span></a><span>Проект № 107789 · 2026</span><span>Создано в рамках программы «Студенческий стартап»</span></div></footer>
-  <dialog class="image-dialog" aria-label="Просмотр фотографии"><button type="button" class="dialog-close" aria-label="Закрыть фотографию">×</button><img src="" alt=""><p class="dialog-caption"></p></dialog>
+
+  <footer class="footer"><div class="container footer-row"><a class="footer-brand" href="#top">КУЗНИЦА <span>3D-ИГРУШЕК</span></a><p>Образовательные игрушки и 3D-печать</p><a href="#order">Оставить заявку ↗</a><span>Проект № 107789 · 2026</span></div></footer>
 </body>
 </html>
